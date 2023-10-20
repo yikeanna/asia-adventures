@@ -1,8 +1,9 @@
+import './Footer.css';
 export default function Footer() {
   return (
     <div className="Footer">
-        <h1>2023</h1>
-        <h1>privacy policy</h1>
+        <h3>2023</h3>
+        <h3>privacy policy</h3>
 
     </div>
   );

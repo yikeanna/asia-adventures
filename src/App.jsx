@@ -1,11 +1,13 @@
 
-import Navbar from './Navbar';
-import Footer from "./Footer";
-import {Route, Routes} from "react-router-dom"
-import Home from './pages/Home'
-import About from "./pages/About";
+import Navbar from './layout/Navbar/Navbar';
 
-import CityPage from "./pages/CityPage";
+// import Navbar from './.../.../Navbar';
+import Footer from "./layout/Footer/Footer";
+import { Route, Routes } from "react-router-dom"
+import Home from './views/Home'
+import About from "./views/About";
+
+import CityPage from "./views/CityPage";
 function App() {
 
   return (
@@ -16,7 +18,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/chengdu" element={<CityPage cityName="Chengdu"/>} />
+            <Route path="/chengdu" element={<CityPage cityName="Chengdu" />} />
+            <Route path="/chongqing" element={<CityPage cityName="Chongqing" />} />
+            <Route path="/zhangjiajie" element={<CityPage cityName="Zhangjiajie" />} />
+            <Route path="/changsha" element={<CityPage cityName="Changsha" />} />
+            <Route path="/wuhan" element={<CityPage cityName="Wuhan" />} />
           </Routes>
         </div>
         <Footer />
