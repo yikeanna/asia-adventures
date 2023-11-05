@@ -1,0 +1,15 @@
+    // {
+    //   "name": "Chengdu - 成都",
+    //   "description": "Chengdu is the capital of Sichuan province in Southwest China. It is known for its spicy cuisine, giant pandas, and historic sites.",
+    //   "image": "src/assets/chengdu/5739.JPG"
+    // },
+    // {
+    //   "name": "Chongqing - 重庆",
+    //   "description": "Chongqing is a major city in Southwest China. It is known for its hotpot cuisine, scenic views of the Yangtze River, and historic sites.",
+    //   "image": "src/assets/chongqing/zhongqing.jpg"
+    // },
+    // {
+    //   "name": "Zhangjiajie - 张家界",
+    //   "description": "Zhangjiajie is a city in Hunan province in Central China. It is known for its stunning natural scenery, including the Zhangjiajie National Forest Park and the Tianmen Mountain.",
+    //   "image": "src/assets/zhangjiajie/Zhangjiajie.jpg"
+    // }

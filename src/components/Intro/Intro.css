@@ -6,7 +6,7 @@
 
   .intro-details {
     width: 50%;
-    padding: 2rem;
+    padding: 10rem 0rem;
     box-sizing: border-box;
   }
 
@@ -40,13 +40,60 @@
     width: 50%;
     height: 100%;
     object-fit: cover;
-    border-radius: 45%;
+    border-radius: 50%;
   }
-  .highlights {
-    /* Add any styles for the "Highlights" heading here */
+  .highlights-navbar {
+    /* backdrop-filter: contrast(180%); */
   }
+
+
+  @media (max-width: 768px) {
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* height: 200%; */
+      padding: 5rem 0rem;
+    }
   
-  .image-container {
-    /* Add any styles for the image container here */
+    .intro-details {
+      width: 100%;
+      padding: 5rem 0rem;
+      /* box-sizing: border-box; */
+    }
+  
+  /* .digital-diary {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 24px;
+      text-align: left;
+    }
     
+    .our-adventure {
+      font-family: 'Syne', sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 53px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    
+    .names {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      text-align: left;
+    }
+    
+   */
+     .img-intro {
+      width: 80%;
+      /* height: 100%; */
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+  
   }

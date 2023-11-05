@@ -19,16 +19,16 @@ export default function Home() {
   const filteredCities = cities.filter((city) =>
     city.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
-  const handleScrollToHighlights = () => {
-    const highlights = document.querySelector('.highlights');
-    window.scrollTo({
-      top: highlights.offsetTop,
-      behavior: 'smooth'
-    });
-  };
+  // const handleScrollToHighlights = () => {
+  //   const highlights = document.querySelector('.highlights');
+  //   window.scrollTo({
+  //     top: highlights.offsetTop,
+  //     behavior: 'smooth'
+  //   });
+  // };
 
   return (
-    <div>
+    <div className= "home-container">
       <Intro />
       <div className="container">
 
@@ -49,12 +49,16 @@ export default function Home() {
           )}
           {/* <button >Search</button> */}
         </form>
-      </div>
+      </div >
+      <div className='city-cards'>
+
       {filteredCities.length > 0 ? (
         <CityCard cities={filteredCities} />
       ) : (
         <div className="no-results">We have not explore {searchTerm} yet:(</div>
       )}
+      </div>
+
 
       <LetsConnect />
     </div>
