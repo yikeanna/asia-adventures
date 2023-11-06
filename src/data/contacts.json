@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Anna Zhang",
+    "role": "Fullstack software developer",
+    "description": "Hello! I am a software dev working Hello! I am a software dev workingHello! I am a software dev working",
+    "image": "src/assets/contacts/anna_zhang.jpg",
+    "email": "anna.zhang@mail.mcgill.ca",
+    "instagram": "https://www.instagram.com/yikeanna/",
+    "linkednd": "https://www.linkedin.com/in/anna-zhang-26895342/"
+  },
+  {
+    "name": "Rosalie Zhang",
+    "role": "Graphic Designer",
+    "description": "Hello! I am a software dev working ",
+    "image": "src/assets/contacts/anna_zhang.jpg",
+    "email": "anna.zhang@mail.mcgill.ca",
+    "instagram": "https://www.instagram.com/yikeanna/",
+    "linkednd": "https://www.instagram.com/yikeanna/"
+  },
+  {
+    "name": "Lin Yuan",
+    "role": "dent student",
+    "description": "Hello! I am a software dev working ",
+    "image": "src/assets/contacts/anna_zhang.jpg",
+    "email": "anna.zhang@mail.mcgill.ca",
+    "instagram": "https://www.instagram.com/yikeanna/",
+    "linkednd": "https://www.instagram.com/yikeanna/"
+  },
+  {
+    "name": "Maggie Shao",
+    "role": "software developer intern",
+    "description": "Hello! I am a software dev working ",
+    "image": "src/assets/contacts/anna_zhang.jpg",
+    "email": "anna.zhang@mail.mcgill.ca",
+    "instagram": "https://www.instagram.com/yikeanna/",
+    "linkednd": "https://www.instagram.com/yikeanna/"
+  }
+]

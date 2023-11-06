@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './LetsConnect.css';
 import { FaEnvelope, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import ContactUs from '../ContactUs/ContactUs';
@@ -6,23 +6,32 @@ import ContactUs from '../ContactUs/ContactUs';
 
 
 export default function LetsConnect() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="lets-connect">
       <div className="title">Let's Connect</div>
       <div className="button-container">
-      
-        <a href="mailto:anna.zhang@mail.mcgill.ca, " className="button">
+        <ContactUs isOpen={isModalOpen} closeModal={closeModal} name="" />
+        <button onClick={openModal} className='button'>Email
           <FaEnvelope className="icon" />
-          <span>Email</span>
-        </a>
-        <a href="https://www.linkedin.com/" className="button">
+        </button>
+        <button onClick={openModal}className='button' >Linkednd
           <FaLinkedin className="icon" />
-          <span>LinkedIn</span>
-        </a>
-        <a href="https://www.instagram.com/yikeanna/" className="button">
+        </button>
+
+        <button onClick={openModal} className='button'>Instagram
           <FaInstagram className="icon" />
-          <span>Instagram</span>
-        </a>
+        </button>
       </div>
     </div>
   );

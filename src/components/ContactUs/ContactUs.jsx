@@ -1,52 +1,62 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './ContactUs.css';
+import contacts from './../../data/contacts.json';
+import { FaEnvelope, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
-const ContactUs = () => {
-  const [showModal, setShowModal] = useState(false);
+import { FaTimes } from 'react-icons/fa';
 
-  const contactData = [
-    {
-      name: 'Person 1',
-      role: 'Role 1',
-      email: 'person1@example.com',
-      linkedin: 'https://www.linkedin.com/in/person1',
-      instagram: 'https://www.instagram.com/person1',
-      image: 'person1.jpg', // Replace with actual image URL
-    },
-    // Add more contact data objects as needed
-  ];
+const ContactUs = ({ isOpen, closeModal }) => {
+  if (!isOpen) {
+    return null;
+  }
 
-  const toggleModal = () => {
-    setShowModal(!showModal);
+  const handleModalClick = (event) => {
+    // Prevent closing the modal when clicking inside the modal content.
+    event.stopPropagation();
   };
 
   return (
-    <div>
-      <button onClick={toggleModal}>Contact Us</button>
-      {showModal && (
-        <div className="modal">
-          <div className="modal-content">
-            {contactData.map((contact, index) => (
-              <div key={index} className="contact-entry">
-                <img src={contact.image} alt={contact.name} />
-                <div>
-                  <h3>{contact.name}</h3>
-                  <p>{contact.role}</p>
-                  <p>
-                    <a href={`mailto:${contact.email}`}>Email</a>
-                  </p>
-                  <p>
-                    <a href={contact.linkedin}>LinkedIn</a>
-                  </p>
-                  <p>
-                    <a href={contact.instagram}>Instagram</a>
-                  </p>
-                </div>
-              </div>
-            ))}
-            <button onClick={toggleModal}>Close</button>
-          </div>
+    <div className="modal-overlay" onClick={closeModal}>
+
+      <div className="modal-content" onClick={handleModalClick}>
+        <div className='title-container'>
+
+          <button onClick={closeModal} className='close-button'><FaTimes /></button>
+          <h1 className='contact-us'>Contact Us!</h1>
+
         </div>
-      )}
+
+
+        <div className='infos'>
+
+          {contacts.map(contact => (
+            <div key={contact.name} className="contact-info">
+              <img src={contact.image} alt={contact.name} className='contact-img' />
+              <h2 className='contact-name'>{contact.name}</h2>
+              <h3 className='contact-role'>{contact.role}</h3>
+              <div className='contact-links'>
+
+                <a href={contact.email} className='contact-link'>
+                  <FaEnvelope />
+                  {/* <span>Email</span> */}
+                </a>
+                <a href={contact.linkednd} className='contact-link'>
+                  <FaLinkedin />
+                  {/* <span>LinkedIn</span> */}
+                </a>
+                <a href={contact.instagram} className='contact-link'>
+                  <FaInstagram />
+                  {/* <span>Instagram</span> */}
+                </a>
+              </div>
+
+              <p className='contact-description'>{contact.description}</p>
+            </div>
+          ))}
+        </div>
+
+
+      </div>
     </div>
   );
 };

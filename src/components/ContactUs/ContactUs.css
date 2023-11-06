@@ -1,0 +1,132 @@
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    /* padding: 1rem 2rem; */
+    width: 90%;
+    height:90%;
+    border-radius: 10px;
+    /* display:flex;
+    flex-direction: column;
+    justify-content: center; */
+    display: grid;
+    grid-template-rows: 100px;
+    overflow: auto;
+
+    /* display: flex;
+    flex-direction: column;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+
+    /* justify-content: center; */
+
+  }
+  .title-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .close-button{
+    margin-left: auto;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding-right: 1rem;
+    padding-top:1rem;
+  }
+  .contact-us {
+    text-align: center;
+  }
+  .infos {
+    padding-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .contact-info{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width:500px; 
+  }
+  .contact-name {
+    margin: 0rem 0rem;
+    margin-top: 1rem;
+  }
+
+  .contact-role {
+    margin:0rem 0rem;
+  }
+.contact-links{
+    display: flex;
+    justify-content: space-between;
+}
+  .contact-link {
+    /* display: flex;
+    align-items: baseline;
+    justify-content: space-between; */
+    padding: 0.5rem 1rem;
+    
+  }
+
+  .contact-img {
+    margin-top:1rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* overflow: hidden; Hide the parts of the image outside the circular container */
+    /* position: relative; */
+    object-position: top;
+    /* top: -20px; */
+  }
+
+  .contact-description {
+    /* margin:0rem; */
+    text-align: center;
+    /* padding: 1rem 0rem; */
+  }
+  /* Add more styles as needed */
+  
+  @media only screen and (min-width:1000px) {
+    .infos{
+        display: grid;
+        grid-template-columns:600px 600px;
+        /* grid-template-rows: 400px 400px 400px;  */
+    /* display: grid;
+    grid-template-columns:400px 400px;
+    grid-template-rows: 400px 400px; */
+    /* overflow: auto; */
+    /* justify-content:center;
+    align-content: center;
+    align-items: center;
+    justify-items: center; */
+}
+
+.contact-info{
+    height:auto;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width:500px;  */
+  }
+
+  }
