@@ -1,0 +1,54 @@
+
+
+.cityIntro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.cityNameTitle{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+.cityHeader {
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.description {
+    font-size: 20px;
+    text-align: center;
+    /* text-justify: inter-word; */
+    margin-bottom: 10px;
+    margin: 0rem 2rem;
+    padding-bottom: 3rem;
+}
+
+.posts{
+    padding: 2rem 0rem;
+}
+
+.gallery{
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+
+/* .cityNameTitle,
+.cityHeader {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.cityNameTitle.show,
+.cityHeader.show {
+  opacity: 1;
+} */

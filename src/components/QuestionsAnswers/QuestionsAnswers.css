@@ -1,0 +1,25 @@
+/* Add these styles to your component's CSS file or use inline styles */
+
+/* Style for the question container */
+.question-container {
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Style for the arrow indicator */
+  .arrow-indicator {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Rotate the arrow when the question is open */
+  .question-container.open .arrow-indicator {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  

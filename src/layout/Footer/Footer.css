@@ -2,14 +2,18 @@
     margin-top:auto;
     display: flex;
     justify-content: space-between;
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
     margin-top:auto;
     background-color: #333;
     color:white;
 }
-.end-footer {
+h3{
+    margin: 0.5rem 0;
+
+}
+/* .end-footer {
     display:flex;
     justify-content:space-between;
     padding-left: 20px;
     padding-right: 20px;
-}
+} */

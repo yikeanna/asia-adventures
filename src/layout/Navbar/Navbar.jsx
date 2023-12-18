@@ -1,6 +1,8 @@
 import "./Navbar.css";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { useState } from "react";
+import React from 'react'
+import cities from '../../data/cities.json';
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -11,6 +13,8 @@ export default function Navbar() {
       top: highlights.offsetTop,
       behavior: 'smooth'
     });
+    toggleMenu();
+    console.log("clicked")
   };
 
   const toggleMenu = () => {
@@ -27,12 +31,10 @@ export default function Navbar() {
         <span className="hamburger-icon"></span>
       </button>
       <ul className={`nav-links ${showMenu ? '' : 'active'}`}>
-        <CustomLink className="custom-link" to="/about">About</CustomLink>
-        <CustomLink to="/chengdu">Chengdu</CustomLink>
-        <CustomLink to="/chongqing">Chongqing</CustomLink>
-        <CustomLink to="/zhangjiajie">Zhangjiajie</CustomLink>
-        <CustomLink to="/changsha">Changsha</CustomLink>
-        <CustomLink to="/wuhan">Wuhan</CustomLink>
+        <CustomLink className="custom-link" to="/about" onClick={toggleMenu}>About</CustomLink>
+        {cities.map(city => (
+          <CustomLink key={city.name} to={`/${city.name.split(' - ')[0].toLowerCase()}`} onClick={toggleMenu}>{city.name}</CustomLink>
+        ))}
         <CustomLink to="/" isHighlights={true} onClick={handleScrollToHighlights}>Highlights</CustomLink>
       </ul>
 

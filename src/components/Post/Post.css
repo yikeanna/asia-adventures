@@ -1,0 +1,30 @@
+.ownerName, .postDate, .postDescription {
+    margin:0.2rem 0.5rem;
+}
+.postContent {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: baseline;
+    font-weight: bold;
+
+
+  }
+
+
+.imagePost {
+    max-height: 80vh;
+    width: 100vw;
+    object-fit: cover;
+
+    background-color: white;
+
+
+}
+
+
+.postDescription {
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+
+}

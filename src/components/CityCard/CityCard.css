@@ -31,6 +31,7 @@
     font-weight: bold;
     margin-bottom: 10px;
     text-align: left;
+
   }
   
   .city-card-description {
@@ -55,3 +56,5 @@
   .city-card-link:hover {
     text-decoration: underline;
   }
+
+

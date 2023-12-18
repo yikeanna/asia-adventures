@@ -35,12 +35,17 @@
     text-align: left;
   }
   
-
+/* .img-container {
+transform:scale(1.5);
+} */
    .img-intro {
     width: 70%;
     height: 50%;
     object-fit: cover;
     border-radius: 10%;
+    /* background-size: cover; 
+    background-size: 400% 400%; */
+    
   }
   .highlights-navbar {
     /* backdrop-filter: contrast(180%); */

@@ -1,17 +1,206 @@
 [
-    {
-      "name": "Chengdu - 成都",
-      "description": "Chengdu is the capital of Sichuan province in Southwest China. It is known for its spicy cuisine, giant pandas, and historic sites.",
-      "image": "src/assets/chengdu/5739.JPG"
-    },
-    {
-      "name": "Chongqing - 重庆",
-      "description": "Chongqing is a major city in Southwest China. It is known for its hotpot cuisine, scenic views of the Yangtze River, and historic sites.",
-      "image": "src/assets/chongqing/zhongqing.jpg"
-    },
-    {
-      "name": "Zhangjiajie - 张家界",
-      "description": "Zhangjiajie is a city in Hunan province in Central China. It is known for its stunning natural scenery, including the Zhangjiajie National Forest Park and the Tianmen Mountain.",
-      "image": "src/assets/zhangjiajie/Zhangjiajie.jpg"
-    }
-  ]
+  {
+    "name": "Chengdu",
+    "chinese_name": "成都",
+    "header": "Land of abundance",
+    "description": "Chengdu is the capital city of Sichuan Province in southwestern China. Known for its rich history, vibrant culture, and spicy cuisine, Chengdu is a major economic, transportation, and communication hub in the region. The city is famous for its relaxed lifestyle, teahouse culture, and the Chengdu Research Base of Giant Panda Breeding, which contributes to its reputation as a 'Panda City'. Chengdu's modern skyline coexists with traditional architecture, reflecting a blend of ancient and contemporary influences. The city is also recognized for its contribution to the global tech scene, with a growing reputation as a center for innovation and entrepreneurship.",
+    "image": "src/assets/chengdu/panda.JPG",
+    "posts": [
+      {
+        "image": "src/assets/chengdu/panda.JPG",
+        "description": "panda attack",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/chengdu/diner_chengdu.JPG",
+        "description": "diner with family",
+        "date": "2019-01-01",
+        "owner": "Rosa"
+      },
+      {
+        "image": "src/assets/chengdu/chengdu_club.JPG",
+        "description": "liveshow",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/chengdu/bear_mascottes.JPG",
+        "description": "liveshow",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/chengdu/anna_granny.JPG",
+        "description": "Anna and her favorite grandma",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/chengdu/anna_and_grannies.JPG",
+        "description": "Anna and her grannies",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      }
+    ]
+  },
+  {
+    "name": "Chongqing",
+    "chinese_name": "重庆",
+    "header": "Mountain City",
+    "description": "Chongqing, often referred to as the 'Mountain City,' is a major metropolis in Southwest China. Renowned for its hotpot cuisine, the city offers a feast for the senses with its spicy flavors. Nestled along the scenic Yangtze River, Chongqing boasts breathtaking views and historic sites that showcase its rich cultural heritage. The juxtaposition of modernity against a backdrop of traditional charm defines Chongqing's unique allure. Explore the vibrant streets, savor the local flavors, and immerse yourself in the dynamic energy of this mountainous gem. The image of Chongqing captures its essence, showcasing the city's diverse landscape and vibrant atmosphere.",
+    "image": "src/assets/chongqing/zhongqing.jpg",
+    "posts": [
+      {
+        "image": "src/assets/chongqing/cq_cityscape.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/chongqing/cq_colorful.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/chongqing/cq_hotpot.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/chongqing/cq_museum.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/chongqing/cq_nei.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/chongqing/cq_night_market.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/chongqing/cq_view.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/chongqing/family_chongqing.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/chongqing/snacks_changsha.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/chongqing/tro_cq.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      }
+    ]
+  },
+  {
+    "name": "Zhangjiajie",
+    "chinese_name": "张家界",
+    "header": "World's Natural Heritage",
+    "description": "Zhangjiajie, known as the 'World's Natural Heritage,' is a captivating city in Hunan province, Central China. Famous for its stunning natural scenery, including the awe-inspiring Zhangjiajie National Forest Park and the majestic Tianmen Mountain, the city is a paradise for nature enthusiasts. The image of Zhangjiajie captures the essence of its breathtaking landscapes and the iconic Heaven's Steps. Immerse yourself in the beauty of Zhangjiajie, where every step unveils a new wonder, and nature's grandeur takes center stage.",
+    "image": "src/assets/zhangjiajie/Zhangjiajie.jpg",
+    "posts": [
+      {
+        "image": "src/assets/zhangjiajie/glass_bridge.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/zhangjiajie/hotel_breakfast.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/zhangjiajie/tourist_trap_still_good.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/zhangjiajie/trio_stairs_heaven.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/zhangjiajie/zzj_sunset.JPG",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      },
+      {
+        "image": "src/assets/zhangjiajie/Zhangjiajie.jpg",
+        "description": "cityscape",
+        "date": "2019-01-01",
+        "owner": "Anna"
+      }
+    ]
+  },
+  {
+    "name": "Changsha",
+    "chinese_name": "长沙",
+    "header": "Star City",
+    "description": "Changsha, known as the 'Star City,' is a vibrant metropolis celebrated for its cultural heritage, delectable local cuisine, and modern development. With a skyline that glitters like stars, the city offers a dynamic blend of tradition and progress. Explore the lively streets, savor the flavors of Changsha's culinary delights, and witness the radiance that earned it the moniker 'Star City.' The image captures the enchanting lights of Changsha's nightlife, showcasing the city's vibrant energy after dusk.",
+    "image": "src/assets/changsha/changsha_mascotte.jpg",
+    "posts": [
+      {
+        "image": "src/assets/changsha/changsha_mascotte.JPG",
+        "description": "city lights",
+        "date": "2019-05-20",
+        "owner": "Lily"
+      }
+    ]
+  },
+  {
+    "name": "Wuhan",
+    "chinese_name": "武汉",
+    "header": "River City",
+    "description": "Wuhan, known as the 'River City,' is a major urban center situated at the confluence of the Yangtze and Han rivers. The city boasts a distinctive blend of history, culture, and modernity, creating a unique tapestry of experiences. Explore the scenic river views, delve into the historical richness, and witness the harmony of tradition and innovation that defines Wuhan. The image encapsulates the essence of Wuhan, showcasing the picturesque Yangtze River and inviting you to embark on a journey through this multifaceted 'River City.'",
+    "image": "src/assets/wuhan/wuhan_church.jpg",
+    "posts": [
+      {
+        "image": "src/assets/wuhan/wuhan_church.JPG",
+        "description": "scenic river view",
+        "date": "2018-11-10",
+        "owner": "David"
+      }
+    ]
+  },
+  {
+    "name": "Beijing",
+    "chinese_name": "北京",
+    "header": "Northern Capital",
+    "description": "Beijing, the 'Northern Capital' of China, stands as a testament to the nation's rich history, iconic landmarks, and the seamless integration of modernity with tradition. As the capital city, Beijing is home to treasures like the Great Wall and the Forbidden City, offering a glimpse into China's imperial past. The dynamic blend of ancient architecture against a backdrop of contemporary urban life defines Beijing's unique charm. Explore the historical sites, wander through the bustling streets, and witness the fusion of the old and the new in this iconic 'Northern Capital.' The image captures the magnificence of the Forbidden City, inviting you to step into Beijing's storied past.",
+    "image": "src/assets/beijing/live_bj.jpg",
+    "posts": [
+      {
+        "image": "src/assets/beijing/live_bj.JPG",
+        "description": "historical site",
+        "date": "2019-02-15",
+        "owner": "John"
+      }
+    ]
+  }
+]

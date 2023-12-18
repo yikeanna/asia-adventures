@@ -1,14 +1,20 @@
 
 import Navbar from './layout/Navbar/Navbar';
-
+import React from 'react';
 // import Navbar from './.../.../Navbar';
 import Footer from "./layout/Footer/Footer";
 import { Route, Routes } from "react-router-dom"
 import Home from './views/Home'
 import About from "./views/About";
 import './styles/pageStyles.css';
+import cities from './data/cities.json';
 
-import CityPage from "./views/CityPage";
+// const cities = citiesData.map(city => ({
+//   name: city.name,
+//   chinese_name: city.chinese_name
+// }));
+
+import CityPage from "./views/CityPage/CityPage";
 function App() {
 
   return (
@@ -18,11 +24,9 @@ function App() {
         <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/chengdu" element={<CityPage cityName="Chengdu" />} />
-          <Route path="/chongqing" element={<CityPage cityName="Chongqing" />} />
-          <Route path="/zhangjiajie" element={<CityPage cityName="Zhangjiajie" />} />
-          <Route path="/changsha" element={<CityPage cityName="Changsha" />} />
-          <Route path="/wuhan" element={<CityPage cityName="Wuhan" />} />
+          {cities.map(city => (
+            <Route key={city.name} path={`/${city.name.split(' - ')[0].toLowerCase()}`} element={<CityPage city={city} />} />
+          ))}
         </Routes>
         <Footer />
       </div>
