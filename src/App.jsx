@@ -1,22 +1,15 @@
 
 import Navbar from './layout/Navbar/Navbar';
 import React from 'react';
-// import Navbar from './.../.../Navbar';
 import Footer from "./layout/Footer/Footer";
 import { Route, Routes } from "react-router-dom"
 import Home from './views/Home'
 import About from "./views/About";
 import './styles/pageStyles.css';
 import cities from './data/cities.json';
-
-// const cities = citiesData.map(city => ({
-//   name: city.name,
-//   chinese_name: city.chinese_name
-// }));
-
 import CityPage from "./views/CityPage/CityPage";
-function App() {
 
+export default function App() {
   return (
     <>
       <div className="App">
@@ -28,10 +21,10 @@ function App() {
             <Route key={city.name} path={`/${city.name.split(' - ')[0].toLowerCase()}`} element={<CityPage city={city} />} />
           ))}
         </Routes>
+        
         <Footer />
       </div>
     </>
   );
 }
 
-export default App

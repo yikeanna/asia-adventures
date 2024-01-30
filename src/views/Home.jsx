@@ -5,6 +5,10 @@ import LetsConnect from '../components/LetsConnect/LetsConnect';
 import cities from '../data/cities.json';
 import '../styles/pageStyles.css'; // import the CSS file
 import { FaSearch, FaTimes } from 'react-icons/fa';
+import Auth from '../components/Auth/Auth';
+import ImageUpload from '../components/ImageUpload/ImageUpload';
+
+
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -19,16 +23,14 @@ export default function Home() {
   const filteredCities = cities.filter((city) =>
     city.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
-  // const handleScrollToHighlights = () => {
-  //   const highlights = document.querySelector('.highlights');
-  //   window.scrollTo({
-  //     top: highlights.offsetTop,
-  //     behavior: 'smooth'
-  //   });
-  // };
+
 
   return (
     <div className= "home-container">
+          <div>
+      {/* <h1>React Firebase Image Upload</h1> */}
+      <ImageUpload />
+    </div>
       <Intro />
       <div className="container">
 
@@ -61,6 +63,7 @@ export default function Home() {
 
 
       <LetsConnect />
+      <Auth/>
     </div>
   );
 }
