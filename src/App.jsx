@@ -14,14 +14,18 @@ import { useState } from 'react';
 
 
 export default function App() {
-  // const [cities, setCities] = useState([])
-  // useEffect(() => {
-  //   axios.get('http://localhost:3001/getCities')
-  //     .then(cities => {
-  //       setCities(cities.data)
-  //     })
-  //     .catch(err => console.log(err))
-  // },[])
+  const [cities, setCities] = useState([])
+  useEffect(() => {
+    axios.get('http://localhost:3001/getCities')
+      .then(cities => {
+        setCities(cities.data)
+        console.log(cities)
+      })
+      .catch(err => console.log(err))
+    console.log("useEffect123")
+    console.log(cities)
+
+  },[])
 
   return (
     <>
