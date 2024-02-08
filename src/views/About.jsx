@@ -5,6 +5,7 @@ import QuestionsAnswers from '../components/QuestionsAnswers/QuestionsAnswers'
 const About = () => {
   return (
     <div className='aboutContainer'>
+
       <div > 
       About
       </div>

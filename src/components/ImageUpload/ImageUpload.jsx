@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { imageDb } from '../../../firebase';
 import {v4} from 'uuid';
-import {getDownloadURL, listAll, uploadBytes } from 'firebase/storage';
-import { ref } from 'firebase/storage';
+import {getDownloadURL, listAll, uploadBytes,ref } from 'firebase/storage';
 
 
 const ImageUpload = () => {
@@ -50,7 +49,7 @@ const ImageUpload = () => {
 //   );
 // };
 
-        console.log("ImageUpload")
+    console.log("ImageUpload")
     const [img,setImg] =useState('')
     const [imgUrl,setImgUrl] =useState([])
 
@@ -66,16 +65,18 @@ const ImageUpload = () => {
      }
     }
 
-    useEffect(()=>{
-        listAll(ref(imageDb,"files")).then(imgs=>{
-            console.log(imgs, "useEffect")
-            imgs.items.forEach(val=>{
-                getDownloadURL(val).then(url=>{
-                    setImgUrl(data=>[...data,url])
-                })
-            })
-        })
-    },[])
+
+    useEffect(() => {
+        console.log("onload");
+        listAll(ref(imageDb, "files")).then((imgs) => {
+          console.log(imgs, "useEffect");
+          imgs.items.forEach((val) => {
+            getDownloadURL(val).then((url) => {
+              setImgUrl((data) => [...data, url]);
+            });
+          });
+        });
+      }, []);
 
 
     return(

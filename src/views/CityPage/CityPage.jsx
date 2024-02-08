@@ -4,13 +4,21 @@ import './CityPage.css'
 import { useInView } from 'react-intersection-observer';
 import cities from '../../data/cities.json';
 import Post from '../../components/Post/Post';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function CityPage(city) {
 
-  // const sayHello = (city) => {
-  //   console.log("Hello")
-  //   console.log(city.city.chinese_name);
-  // };
+
+  // const [cities, setCities] = useState([])
+  // useEffect(() => {
+  //   axios.get('http://localhost:3001/getCities')
+  //     .then(cities => {
+  //       setCities(cities.data)
+  //     })
+  //     .catch(err => console.log(err))
+  // },[])
+
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.5, // Adjust the threshold as needed
