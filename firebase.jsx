@@ -16,3 +16,5 @@ const app = initializeApp(firebaseConfig);
 const imageDb = getStorage(app);
 
 export { imageDb, app as default };
+
+// i get a few firebase references printed out in the console as imageRef, but i am also getting the error Post.jsx:28 Error getting image URL: FirebaseError: Firebase Storage: Object 'src/assets/chongqing/cq_museum.JPG' does not exist. (storage/object-not-found). I checked my firebase storage and i in fact have this image gs://asia-adventure.appspot.com/src/assets/chongqing contains the image cq_museum.jpg

@@ -6,7 +6,7 @@ import { Route, Routes } from "react-router-dom"
 import Home from './views/Home'
 import About from "./views/About";
 import './styles/pageStyles.css';
-import cities from './data/cities.json';
+// import cities from './data/cities.json';
 import CityPage from "./views/CityPage/CityPage";
 import axios from 'axios';
 // import 'bootstrap/dist/css/bootstrap.min.css'
@@ -19,7 +19,7 @@ export default function App() {
     axios.get('http://localhost:3001/getCities')
       .then(cities => {
         setCities(cities.data)
-        console.log(cities)
+        console.log(cities.data)
       })
       .catch(err => console.log(err))
     console.log("useEffect123")

@@ -28,3 +28,5 @@ app.get('/getCities', async (req, res) => {
 app.listen(3001, () => {
     console.log('Server has started');
 });
+//cd backend
+//node script.js

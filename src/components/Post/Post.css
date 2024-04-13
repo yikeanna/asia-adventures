@@ -13,11 +13,12 @@
 
 
 .imagePost {
-    max-height: 80vh;
-    width: 100vw;
-    object-fit: cover;
-
-    background-color: white;
+    /* max-height: 80vh;
+    width: 100vw; */
+    /* object-fit: cover; */
+    width: 500px;
+    height: auto;
+    /* background-color: blue; */
 
 
 }
