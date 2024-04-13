@@ -11,6 +11,8 @@ import CityPage from "./views/CityPage/CityPage";
 import axios from 'axios';
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react';
+import UploadPost from './views/UploadPost/UploadPost';
+import Login from './views/Login/Login';
 
 
 export default function App() {
@@ -37,6 +39,8 @@ export default function App() {
           {cities.map(city => (
             <Route key={city.name} path={`/${city.name.split(' - ')[0].toLowerCase()}`} element={<CityPage city={city} />} />
           ))}
+          <Route path="/upload" element={<UploadPost />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         
         <Footer />

@@ -36,6 +36,9 @@ export default function Navbar() {
           <CustomLink key={city.name} to={`/${city.name.split(' - ')[0].toLowerCase()}`} onClick={toggleMenu}>{city.name}</CustomLink>
         ))}
         <CustomLink to="/" isHighlights={true} onClick={handleScrollToHighlights}>Highlights</CustomLink>
+        <CustomLink key="uploadPost" to="upload">Upload</CustomLink>
+        <CustomLink key="login" to="login">Login</CustomLink>
+
       </ul>
 
 

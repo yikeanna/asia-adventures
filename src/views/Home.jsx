@@ -28,8 +28,6 @@ export default function Home() {
   return (
     <div className= "home-container">
           <div>
-      {/* <h1>React Firebase Image Upload</h1> */}
-      <ImageUpload />
     </div>
       <Intro />
       <div className="container">
@@ -63,7 +61,6 @@ export default function Home() {
 
 
       <LetsConnect />
-      <Auth/>
     </div>
   );
 }
