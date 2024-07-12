@@ -14,3 +14,6 @@ npm run dev
 
 cd backend
 node script.js
+
+docker run --network=mynetwork -p 3001:3001 -d backend-asia-adventures
+docker run --network=mynetwork -p 5173:5173 -d frontend-asia-adventures

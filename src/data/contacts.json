@@ -2,37 +2,37 @@
   {
     "name": "Anna Zhang",
     "role": "Fullstack software developer",
-    "description": "Hello! I am a software dev working Hello! I am a software dev workingHello! I am a software dev working",
+    "description": "Hello! I am a software developer working at Bell.",
     "image": "src/assets/contacts/anna_zhang.jpg",
-    "email": "anna.zhang@mail.mcgill.ca",
+    "email": "yikeanna@gmail.com",
     "instagram": "https://www.instagram.com/yikeanna/",
     "linkednd": "https://www.linkedin.com/in/anna-zhang-26895342/"
   },
   {
     "name": "Rosalie Zhang",
     "role": "Graphic Designer",
-    "description": "Hello! I am a software dev working ",
-    "image": "src/assets/contacts/anna_zhang.jpg",
-    "email": "anna.zhang@mail.mcgill.ca",
-    "instagram": "https://www.instagram.com/yikeanna/",
-    "linkednd": "https://www.instagram.com/yikeanna/"
+    "description": "Hi, I'm Rosalie, I recently graduated with a Cognitive Science major with a specialization in computer science and linguistics at McGill University. I have a flair for UX/UI design and want to dedicate myself to design with curiosity, compassion, and empathy to create exceptional user experiences. Outside of work, you’ll likely find me on an ice rink, in a coffee shop, or catching the sunset on a mountain🏔 ",
+    "image": "src/assets/contacts/rosalie_zhang.jpg",
+    "email": "rosalieruiyanzhang@gmail.com",
+    "instagram": "https://www.instagram.com/rwozali/",
+    "linkednd": "https://www.linkedin.com/in/rosalieruiyanzhang/"
   },
   {
     "name": "Lin Yuan",
-    "role": "dent student",
-    "description": "Hello! I am a software dev working ",
-    "image": "src/assets/contacts/anna_zhang.jpg",
-    "email": "anna.zhang@mail.mcgill.ca",
-    "instagram": "https://www.instagram.com/yikeanna/",
-    "linkednd": "https://www.instagram.com/yikeanna/"
+    "role": "Dent student",
+    "description": "Hello! I am a dent student studying at UDEM. I am passionate about dentistry and I am always looking for new opportunities to learn and grow.",
+    "image": "src/assets/contacts/lin_yuan.jpg",
+    "email": "linyuan2001@gmail.com",
+    "instagram": "https://www.instagram.com/linn_yuann/",
+    "linkednd": "https://www.linkedin.com/in/lin-yuan-26bb57208/"
   },
   {
     "name": "Maggie Shao",
-    "role": "software developer intern",
-    "description": "Hello! I am a software dev working ",
-    "image": "src/assets/contacts/anna_zhang.jpg",
-    "email": "anna.zhang@mail.mcgill.ca",
-    "instagram": "https://www.instagram.com/yikeanna/",
-    "linkednd": "https://www.instagram.com/yikeanna/"
+    "role": "Software developer",
+    "description": "Hello! I am a software developer working at Ubisoft. ",
+    "image": "src/assets/contacts/maggie_shao.jpg",
+    "email": "maggieshao27@gmail.com",
+    "instagram": "https://www.instagram.com/mzq.shao/",
+    "linkednd": "https://www.linkedin.com/in/maggie-shao-9a83b518a/"
   }
 ]

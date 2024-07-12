@@ -6,17 +6,15 @@ import ImageUpload from '../../components/ImageUpload/ImageUpload';
 
 function UploadPost() {
 
-
-
   return (
     <div>
-       <ImageUpload/>
+      <div>hello</div>
+      <ImageUpload />
 
     </div>
   );
 
 }
-
 
 
 export default UploadPost

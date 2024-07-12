@@ -6,8 +6,8 @@ import { getDownloadURL, listAll, uploadBytes, ref } from 'firebase/storage';
 
 const ImageUpload = () => {
 
-  console.log("ImageUpload")
-  console.log(imageDb)
+  // console.log("ImageUpload")
+  // console.log(imageDb)
   const [img, setImg] = useState('')
   const [imgUrl, setImgUrl] = useState([])
 
@@ -25,6 +25,7 @@ const ImageUpload = () => {
 
 
   useEffect(() => {
+    console.log("hei")
     console.log("onload");
     listAll(ref(imageDb, "files")).then((imgs) => {
       console.log(imgs, "useEffect");

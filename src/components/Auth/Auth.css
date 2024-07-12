@@ -1,0 +1,13 @@
+
+@import '../../constants/constants.css';
+
+
+  
+  .sign-in-button {
+    font-size: var(--font-size-large);
+    background-color: var(--main-color);
+  }
+
+button:hover {
+    cursor: pointer;
+  }

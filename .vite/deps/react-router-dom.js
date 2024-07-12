@@ -74,7 +74,7 @@ function createMemoryHistory(options) {
     },
     createHref,
     createURL(to) {
-      return new URL(createHref(to), "http://localhost");
+      return new URL(createHref(to), "http://host.docker.internal:3001/getCities");
     },
     encodeLocation(to) {
       let path = typeof to === "string" ? parsePath(to) : to;

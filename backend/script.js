@@ -7,10 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/asia_adventures', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+mongoose.connect('mongodb://host.docker.internal:27017/asia_adventures');
 mongoose.connection.on('connected', () => {
     console.log('Connected to the database');
 });
@@ -26,7 +23,7 @@ app.get('/getCities', async (req, res) => {
 });
 
 app.listen(3001, () => {
-    console.log('Server has started');
+    console.log('Server has started on port 3001');
 });
 //cd backend
 //node script.js

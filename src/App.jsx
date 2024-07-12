@@ -2,18 +2,15 @@
 import Navbar from './layout/Navbar/Navbar';
 import React, { useEffect } from 'react';
 import Footer from "./layout/Footer/Footer";
-import { Route, Routes } from "react-router-dom"
 import Home from './views/Home'
 import About from "./views/About";
 import './styles/pageStyles.css';
-// import cities from './data/cities.json';
 import CityPage from "./views/CityPage/CityPage";
 import axios from 'axios';
-// import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react';
 import UploadPost from './views/UploadPost/UploadPost';
 import Login from './views/Login/Login';
-
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 export default function App() {
   const [cities, setCities] = useState([])
@@ -24,10 +21,7 @@ export default function App() {
         console.log(cities.data)
       })
       .catch(err => console.log(err))
-    console.log("useEffect123")
-    console.log(cities)
-
-  },[])
+  }, [])
 
   return (
     <>
@@ -39,10 +33,17 @@ export default function App() {
           {cities.map(city => (
             <Route key={city.name} path={`/${city.name.split(' - ')[0].toLowerCase()}`} element={<CityPage city={city} />} />
           ))}
-          <Route path="/upload" element={<UploadPost />} />
           <Route path="/login" element={<Login />} />
+          {/* <Route path="/upload" element={<UploadPost />} /> */}
+          {/* <ProtectedRoute path="/upload">
+            <UploadPost />
+          </ProtectedRoute> */}
+          <Route path="/upload" element={localStorage.getItem("user")? <UploadPost /> : <Navigate to="/login" />} />
+          {/* <Route exact path='/upload/*' elemdocker run --network=mynetwork -p 5173:5173 -d frontend-asia-adventuresdocker run --network=mynetwork -p 5173:5173 -d frontend-asia-adventuresdocker run --network=mynetwork -p 5173:5173 -d frontend-asia-adventuresdocker run --network=mynetwork -p 5173:5173 -d frontend-asia-adventuresent={<ProtectedRoute/>}>
+            <Route exact path='/upload/*' element={<UploadPost/>}/>
+          </Route> */}
         </Routes>
-        
+
         <Footer />
       </div>
     </>
