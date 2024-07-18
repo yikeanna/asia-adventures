@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://host.docker.internal:27017/asia_adventures');
+mongoose.connect('mongodb://mongodb:27017/asia_adventures');
 mongoose.connection.on('connected', () => {
     console.log('Connected to the database');
 });
